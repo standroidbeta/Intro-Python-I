@@ -33,21 +33,22 @@ b = (-14, 72)
 print("Distance is: {:.2f}".format(dist(a, b)))
 
 # Write a function `print_tuple` that prints all the values in a tuple
+t = (1, 2, 5, 7, 99)
 
 
 def print_tuple(t):
-    t = (1, 2, 5, 7, 99)
+
     for i in t:
         print(i)  # Prints 1 2 5 7 99, one per line
-    return
 
 # Declare a tuple of 1 element then print it
 
 
 t = (1, 2, 5, 7, 99)
+print_tuple(t)
 one, two, five, seven, ninety_nine = t
 print('Declared Element:', seven)
 
 
 u = (1,)  # What needs to be added to make this work?
-print(print_tuple(u))
+print_tuple(u)

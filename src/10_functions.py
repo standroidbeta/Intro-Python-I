@@ -8,5 +8,13 @@ num = int(num)
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
-# YOUR CODE HERE
+
+def is_even_or_odd(num):
+    if (num % 2) == 0:
+        print(f'{num} is Even')
+    else:
+        print(f'{num} is Odd.')
+
+
+is_even_or_odd(num)
 

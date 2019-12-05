@@ -22,3 +22,25 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+
+def month_year():
+    while True:
+        try:
+            calendar.setfirstweekday(calendar.SUNDAY)
+            today = datetime.today()
+            yyyy = int(input('Input year as a four digit number or press Enter for current year:') or today.year)
+            mm = int(input('Input month as a two digit number or press Enter for current month:') or today.month)
+            print(calendar.month(yyyy, mm))
+        except ValueError:
+            print("Please use integer numbers and not a letters for input!")
+            break
+        else:
+            print(f"This is the calendar for {mm} {yyyy}")
+            break
+
+
+month_year()
+
+
+
