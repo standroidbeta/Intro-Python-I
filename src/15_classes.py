@@ -16,7 +16,7 @@ class LatLon:
 class Waypoint(LatLon):
     """
     This is a class that adds a waypoint name and retrieves the 'lat' and 'lon'
-    parameters form the Latlon class.
+    parameters form the LatLon class.
     """
     def __init__(self, name, lat, lon):
         super().__init__(lat, lon)
@@ -53,7 +53,7 @@ print(waypoint)
 
 # Make a new geocache "Newberry Views", diff 1.5, size 2, 44.052137, -121.41556
 
-geocache = Geocache('Nweberry Views', 1.5, 2, 44.052137, -121.41556)
+geocache = Geocache('Newberry Views', 1.5, 2, 44.052137, -121.41556)
 
 # Print it--also make this print more nicely
 print(geocache)
